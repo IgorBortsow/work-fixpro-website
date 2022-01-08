@@ -1,0 +1,34 @@
+.fun-fact {
+  @include grid(25rem);
+  background: $light-bg;
+  gap: 2.5rem;
+
+  .box {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+
+    img {
+      height: 10rem;
+    }
+
+    .info {
+      h3 {
+        @include titleText(4rem);
+      }
+      p {
+        @include graphText(1.5rem);
+        text-transform: capitalize;
+        padding-top: 0.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 5rem 2rem;
+    .box {
+      flex-flow: column;
+      text-align: center;
+    }
+  }
+}

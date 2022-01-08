@@ -1,0 +1,18 @@
+// Переопределение дефолтных значений переменных Bootstrap 4 и определение своих
+@import "variables";
+@import "font/font";
+@import "mixin/mixin";
+// Подключение своих SCSS файлов
+@import "my";
+@import "blocks/header";
+@import "blocks/navbar/navbar";
+@import "blocks/home";
+@import "blocks/fun-fact";
+@import "blocks/about";
+@import "blocks/services";
+@import "blocks/gallery";
+@import "blocks/facelities";
+@import "blocks/team";
+@import "blocks/reviews";
+@import "blocks/contact";
+@import "blocks/footer";
